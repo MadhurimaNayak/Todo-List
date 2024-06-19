@@ -1,0 +1,124 @@
+*{
+  font-family:'Noto Sans KR', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  color:rgb(28, 34, 32);
+}
+
+h1,
+h2,
+h3,
+input,
+button{
+  font-family: 'Noto Sans', sans-serif;
+  font-weight:600;
+}
+
+#root{
+  min-height: 100vh;
+  display:flex;
+  flex-direction:column;
+  padding:14px;
+  background: #eff6ff;
+  gap: 14px;
+}
+
+.heading{
+  text-align: center;
+  font-weight:900;
+}
+
+header{
+  display:flex;
+  align-items: stretch;
+}
+
+header,
+.main{
+  max-width: 800px;
+  width:100%;
+  margin:0 auto;
+  gap:14px;
+}
+
+header input{
+  flex:1;
+  border-radius:14px;
+  outline:none;
+  width:100%;
+}
+
+header button{
+  border-radius:14px;
+  background: transparent;
+  transition-duration:200ms;
+  cursor:pointer;
+}
+header button:hover {
+  opacity: 0.7;
+}
+
+header button,
+header input{
+  padding:14px 18px;
+  border:none;
+  outline:none;
+  background:white;
+}
+
+p{
+  font-size:0.9em;
+}
+
+.main{
+  display:flex;
+  flex-direction: column;
+  gap:14px;
+}
+
+.todoitem{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:14px;
+  border-radius: 14px;
+  background: white;
+}
+
+.todoitem p{
+  flex:1;
+}
+
+.actions{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.actions button{
+  transition-duration: 200ms;
+  border:none;
+  background:transparent;
+  cursor:pointer;
+}
+
+.action button:hover{
+  opacity:0.7;
+}
+
+@media (min-width: 640px) {
+
+  .heading{
+    font-size: 1.5rem;
+  }
+
+  header button,
+  header input {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
